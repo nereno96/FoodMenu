@@ -20,14 +20,14 @@ let menu = {
 
 const optionsList = document.getElementById("optionsList");
 const foodsList = document.getElementById("foodsList");
-
+foodsList.style.display = "none"
 window.onload = function () {
-    initFoodsList();
-    optionsList.onchange = optionChanged;
+    //initFoodsList();
+    optionsList.onchange = initFoodsList;
 }
 
 function initFoodsList () {
-
+    foodsList.length = 0;
     let selectedValue = optionsList.value;
     if (selectedValue == "drinks") {
         for (let value of menu.drinks) {
@@ -63,10 +63,10 @@ function initFoodsList () {
         foodsList.style.display = "none";
     }
     
-    return foodsList;
+    //return foodsList;
 }
 
-function optionChanged () {
-    foodsList.options.length = 0;
-    initFoodsList();
-}
+// function optionChanged () {
+//     foodsList.options.length = 0;
+//     initFoodsList();
+// }

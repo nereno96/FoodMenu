@@ -9,20 +9,32 @@
   </head>
   <body>
     <header>
-    <h1>Food Menu</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h1>Food Menu</h1>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
-        <select id="optionsList" name="options">
-            <option value="select">Select A Category</option>
-            <option value="drinks">Drinks</option>
-            <option value="entrees">Entrees</option>
-            <option value="desserts">Desserts</option>
-        </select>
-        <select id="foodsList" name="foods" size="3">
-            
-        </select>
-
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                <select class="form-select" aria-label="options" id="optionsList" name="options">
+                    <option value="select">Select A Category</option>
+                    <option value="drinks">Drinks</option>
+                    <option value="entrees">Entrees</option>
+                    <option value="desserts">Desserts</option>
+                </select>
+                <select class="form-select" id="foodsList" name="foods" size="3">
+                    
+                </select>
+                </div>
+            </div>
+        </div>
     </main>
+
     <footer>
 
     </footer>
